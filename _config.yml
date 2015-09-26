@@ -1,0 +1,18 @@
+# Site settings
+title: Chao Li
+header-img: img/home-bg.jpg
+email: lichao90@outlook.com
+description: "淡泊以明智，宁静以志远"
+# baseurl: "/"
+url: "chaopli.github.io"
+github_username:  chaopli
+facebook_username:  lichaorodxx
+weibo_username: 1873972340
+linkedin_username: lichao90
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
