@@ -16,7 +16,7 @@ First, let's look at the first sequential search algorithm, **Algorithm S** disc
 **S3**. \[Advance.\] Increase $i$ with $1$. \\
 **S4**. \[End of file?\] If $i\leq N$, go back to S2. Otherwise the algorithm terminates unsuccesfully.
 
-The most time consumming operations of this algorithm are the two comparison operations in **S2** and **S4**, which cost $2n$ time units. This chapter gives a smart method. With a straightforward change, this algorithm could be faster unless the list of record is very short. Let's take a look at the **Algorithm Q** described in the textbook.
+The most time consumming operations of this algorithm are the two comparison operations in **S2** and **S4**, which cost $2n$ time units in worst case. This chapter gives a smart method. With a straightforward change, this algorithm could be faster unless the list of record is very short. Let's take a look at the **Algorithm Q** described in the textbook.
 
 **Algorithm Q** (*Quick sequential search*). This algorithm is the same as Algorithm S, except that it assumes the presence of a dummy record $R\_{N+1}$ at the end of the file. \\
 **Q1**. \[Initialize.\] Set $i\leftarrow1$, and set $K\_{N+1}\leftarrow K$. \\
@@ -24,7 +24,7 @@ The most time consumming operations of this algorithm are the two comparison ope
 **Q3**. \[Advance.\] Increase $i$ by $1$ and return to Q2. \\
 **Q4**. \[End of file?\] If $i\leq N$, the algorithm terminates successfully; otherwise it terminates unsuccessfully ($i=N+1$).
 
-In this algorithm, the comparison in Q4 only be evaluated once, at the end of this file. So the comparisons cost $n$ time units.
+In this algorithm, the comparison in Q4 only be evaluated once, at the end of this file. So the comparisons cost $n$ time units in worst case.
 
 # Fibonaccian search
 Fibonaccian numbers can analogous the power of 2, hence a similar phenomenon occurs in searching. We can use fibonaccian numbers analogous binary search. This procedure here about to discuss should be distinguished with another numerical procedure called "Fibonacci search", which is used to locate the maximum of a unimodal function [^avriel1966optimality]. \\
