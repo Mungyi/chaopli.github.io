@@ -25,3 +25,9 @@ The most time consumming operations of this algorithm are the two comparison ope
 **Q4**. \[End of file?\] If $i\leq N$, the algorithm terminates successfully; otherwise it terminates unsuccessfully ($i=N+1$).
 
 In this algorithm, the comparison in Q4 only be evaluated once, at the end of this file. So the comparisons give a $O(n)$ complexity in this algorithm.
+
+# Fibonaccian search
+Fibonaccian numbers can analogous the power of 2, hence a similar phenomenon occurs in searching. We can use fibonaccian numbers analogous binary search. This procedure here about to discuss should be distinguished with another numerical procedure called "Fibonacci search", which is used to locate the maximum of a unimodal function [^avriel1966optimality]
+
+# Reference
+[^avriel1966optimality]: Avriel, Mordecai, and Douglass J. Wilde. "Optimality proof for the symmetric Fibonacci search technique." Fibonacci Quarterly 4.3 (1966): 265-269.
