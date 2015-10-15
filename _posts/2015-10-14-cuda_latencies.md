@@ -28,6 +28,27 @@ date: 2015-10-14
  the *Occupancy* equals to 1. The more active blocks the GPU supports the less
  resource could be allocated to each thread. So we should adjust the resources
  usage based on our problem and architectures.
+ 
+ The following table shows the comparison between GK107 (Kepler) and GM107
+ (Maxwell)
+
+|GPU|GK107|GM107|
+|---|-----|-----|
+| CUDA Cores|384|640|
+| Base Clock|1058 MHz|1020 MHz|
+| GPU Boost Clock|N/A|1085 MHz|
+| GFLOP/s|812.5|1305.6|
+| Compute Capability|3.0|5.0|
+| Shared Memory / SM|16KB / 48 KB|64 KB|
+| Register File Size / SM|256 KB|256 KB|
+| Active Blocks / SM|16|32|
+| Memory Clock|5000 MHz|5400 MHz|
+| Memory Bandwidth|80 GB/s|86.4 GB/s|
+| L2 Cache Size|256 KB|2048 KB|
+| TDP|64W|60W|
+| Transistors|1.3 Billion|1.87 Billion|
+| Die Size|118 mm2|148 mm2|
+| Manufactoring Process|28 nm|28 nm|
 
 # Programming strategy in terms of hiding latency
 * Instruction-Level Parallism: execute independent instructions in a thread
