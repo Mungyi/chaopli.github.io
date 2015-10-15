@@ -16,8 +16,8 @@ date: 2015-10-14
   the maximum number of registers per thread (255). 
 
 * Number of maximum active blocks (per SM) determines the number of active warps
-  working concurrently in a SM. The $Occupancy=Active Warps/Maximum Active
-  Warps$.
+  working concurrently in a SM. The Occupancy=Active Warps/Maximum Active
+  Warps.
 
 * Potential occupancy limiters:
   * Register usage
