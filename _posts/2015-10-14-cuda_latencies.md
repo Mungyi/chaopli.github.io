@@ -29,6 +29,13 @@ date: 2015-10-14
  resource could be allocated to each thread. So we should adjust the resources
  usage based on our problem and architectures.
  
+ The size of block is the number of threads assigned in a block. Each SM has a
+ maximum number of active block. If the number of threads is too small, to
+ achieve the same purpose, one will probably have to use more blocks. If there
+ is no so many SMs available, it will be not full occupancy. For example, assume
+ we have a SM supporting 16 active blocks. It has 128 cores in total. We can
+ have at most 16 blocks (8 threads in each block).
+
  The following table shows the comparison between GK107 (Kepler) and GM107
  (Maxwell)
 
