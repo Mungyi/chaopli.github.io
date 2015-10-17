@@ -2,6 +2,8 @@
 layout: post
 title: "Review of CUDA programming"
 date: 2015-10-14
+header-img: "img/cuda.jpg"
+
 ---
 
 # Programming strategy in terms of GPU architecture

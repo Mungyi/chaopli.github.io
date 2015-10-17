@@ -3,6 +3,7 @@ layout: post
 title: "Study notes for TAOCP: Sequential search and Fibonaccian search"
 date: 2015-09-26
 header-img: "img/post-bg-07.jpg"
+
 ---
 
 # Sequential Searching
